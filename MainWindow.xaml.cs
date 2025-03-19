@@ -101,6 +101,8 @@ namespace Klicka
 
         private void StartScheduler()
         {
+            titleBarTextBlock.Text = "Klicka - Running";
+
             ConfigPage page = ContentFrame.Content as ConfigPage;
             var @params = new Parameters()
             {
@@ -110,15 +112,14 @@ namespace Klicka
                 sleepMillis = page.IntervalMillis,
                 isRandomInterval = page.UseRandomInterval,
                 randomRange = page.IntervalRange,
+                isLimitedDuration = page.UseFixedDuration,
+                targetClickAmount = page.FixedClickAmount,
             };
-            var random = 8;
-            titleBarTextBlock.Text = "Klicka - Running";
-            Scheduler.Start(@params);
+            Scheduler.Start(@params, () => DispatcherQueue.TryEnqueue(() => { titleBarTextBlock.Text = "Klicka"; }));
         }
 
         private void StopScheduler()
         {
-            titleBarTextBlock.Text = "Klicka";
             Scheduler.Stop();
         }
 

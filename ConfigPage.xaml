@@ -54,9 +54,8 @@
                             <RadioButton
                                 Height="Auto"
                                 Padding="8,0,0,0"
-                                VerticalAlignment="Stretch"
-                                VerticalContentAlignment="Center">
-                                <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                VerticalAlignment="Stretch">
+                                <StackPanel Orientation="Horizontal">
                                     <Button
                                         x:Name="getCursorLocBtn"
                                         Margin="0,0,8,0"
@@ -100,65 +99,91 @@
                     HorizontalAlignment="Stretch"
                     Background="{ThemeResource LayerFillColorDefaultBrush}"
                     CornerRadius="0 0 4 4">
-                    <RadioButtons
-                        x:Name="intervalChoice"
-                        HorizontalAlignment="Left"
-                        Header="Click Interval"
-                        SelectedIndex="0">
-                        <RadioButton x:Name="rb1">
-                            <RelativePanel>
-                                <NumberBox
-                                    x:Name="intervalInputBox"
-                                    Width="Auto"
-                                    Header="Constant Interval"
-                                    LargeChange="100"
-                                    Minimum="0"
-                                    SmallChange="10"
-                                    SpinButtonPlacementMode="Compact"
-                                    Value="100" />
-                                <TextBlock
-                                    Padding="8,0,0,8"
-                                    RelativePanel.AlignBottomWith="intervalInputBox"
-                                    RelativePanel.RightOf="intervalInputBox"
-                                    Text="ms" />
-                            </RelativePanel>
-                        </RadioButton>
-                        <RadioButton>
-                            <RelativePanel>
-                                <TextBlock
-                                    x:Name="riTb0"
-                                    Padding="0,0,8,8"
-                                    Text="Random Interval Between" />
-                                <NumberBox
-                                    x:Name="randIntervalMinInputBox"
-                                    Minimum="0"
-                                    RelativePanel.AlignLeftWith="riTb0"
-                                    RelativePanel.Below="riTb0"
-                                    SmallChange="10"
-                                    SpinButtonPlacementMode="Compact"
-                                    Value="10" />
-                                <TextBlock
-                                    x:Name="riTb1"
-                                    Padding="8,0,16,4"
-                                    RelativePanel.AlignVerticalCenterWith="randIntervalMinInputBox"
-                                    RelativePanel.RightOf="randIntervalMinInputBox"
-                                    Text="ms" />
-                                <NumberBox
-                                    x:Name="randIntervalMaxInputBox"
-                                    Minimum="1"
-                                    RelativePanel.AlignVerticalCenterWith="riTb1"
-                                    RelativePanel.RightOf="riTb1"
-                                    SmallChange="10"
-                                    SpinButtonPlacementMode="Compact"
-                                    Value="100" />
-                                <TextBlock
-                                    Padding="8,0,0,4"
-                                    RelativePanel.AlignVerticalCenterWith="randIntervalMaxInputBox"
-                                    RelativePanel.RightOf="randIntervalMaxInputBox"
-                                    Text="ms" />
-                            </RelativePanel>
-                        </RadioButton>
-                    </RadioButtons>
+                    <StackPanel>
+                        <RadioButtons
+                            x:Name="intervalChoice"
+                            HorizontalAlignment="Left"
+                            Header="Click Interval"
+                            SelectedIndex="0">
+                            <RadioButton x:Name="rb1">
+                                <RelativePanel>
+                                    <NumberBox
+                                        x:Name="intervalInputBox"
+                                        Width="Auto"
+                                        Header="Constant Interval"
+                                        LargeChange="100"
+                                        Minimum="0"
+                                        SmallChange="10"
+                                        SpinButtonPlacementMode="Compact"
+                                        Value="100" />
+                                    <TextBlock
+                                        Padding="8,0,0,8"
+                                        RelativePanel.AlignBottomWith="intervalInputBox"
+                                        RelativePanel.RightOf="intervalInputBox"
+                                        Text="ms" />
+                                </RelativePanel>
+                            </RadioButton>
+                            <RadioButton>
+                                <RelativePanel>
+                                    <TextBlock
+                                        x:Name="riTb0"
+                                        Padding="0,0,8,8"
+                                        Text="Random Interval Between" />
+                                    <NumberBox
+                                        x:Name="randIntervalMinInputBox"
+                                        Minimum="0"
+                                        RelativePanel.AlignLeftWith="riTb0"
+                                        RelativePanel.Below="riTb0"
+                                        SmallChange="10"
+                                        SpinButtonPlacementMode="Compact"
+                                        Value="10" />
+                                    <TextBlock
+                                        x:Name="riTb1"
+                                        Padding="8,0,16,4"
+                                        RelativePanel.AlignVerticalCenterWith="randIntervalMinInputBox"
+                                        RelativePanel.RightOf="randIntervalMinInputBox"
+                                        Text="ms" />
+                                    <NumberBox
+                                        x:Name="randIntervalMaxInputBox"
+                                        Minimum="1"
+                                        RelativePanel.AlignVerticalCenterWith="riTb1"
+                                        RelativePanel.RightOf="riTb1"
+                                        SmallChange="10"
+                                        SpinButtonPlacementMode="Compact"
+                                        Value="100" />
+                                    <TextBlock
+                                        Padding="8,0,0,4"
+                                        RelativePanel.AlignVerticalCenterWith="randIntervalMaxInputBox"
+                                        RelativePanel.RightOf="randIntervalMaxInputBox"
+                                        Text="ms" />
+                                </RelativePanel>
+                            </RadioButton>
+                        </RadioButtons>
+                        <RadioButtons
+                            x:Name="durationChoice"
+                            Margin="0,24,0,0"
+                            HorizontalAlignment="Left"
+                            Header="Duration"
+                            SelectedIndex="0">
+                            <RadioButton>
+                                <StackPanel Orientation="Horizontal">
+                                    <TextBlock Text="Until Stopped" />
+                                </StackPanel>
+                            </RadioButton>
+                            <RadioButton Padding="8,0,0,0" VerticalAlignment="Stretch">
+                                <StackPanel Orientation="Horizontal">
+                                    <NumberBox
+                                        x:Name="fixedClickCountInputBox"
+                                        Margin="0,0,8,0"
+                                        Minimum="1"
+                                        SmallChange="10"
+                                        SpinButtonPlacementMode="Compact"
+                                        Value="100" />
+                                    <TextBlock VerticalAlignment="Center" Text="Times" />
+                                </StackPanel>
+                            </RadioButton>
+                        </RadioButtons>
+                    </StackPanel>
                 </Border>
             </StackPanel>
         </Grid>

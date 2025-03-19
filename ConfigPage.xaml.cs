@@ -38,6 +38,8 @@ namespace Klicka
         public bool UseRandomInterval => intervalChoice.SelectedIndex == 1;
         public int IntervalMillis => (int)intervalInputBox.Value;
         public (int, int) IntervalRange => ((int)randIntervalMinInputBox.Value, (int)randIntervalMaxInputBox.Value);
+        public bool UseFixedDuration => durationChoice.SelectedIndex == 1;
+        public int FixedClickAmount => (int)fixedClickCountInputBox.Value;
 
         public ConfigPage()
         {
