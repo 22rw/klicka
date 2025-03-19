@@ -2,7 +2,7 @@
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <_LastSelectedProfileId>C:\Users\anton\Projects\C#\Klicka\Properties\PublishProfiles\Single x64 Binary.pubxml</_LastSelectedProfileId>
-    <ActiveDebugProfile>Klicka (Package)</ActiveDebugProfile>
+    <ActiveDebugProfile>Klicka (Unpackaged)</ActiveDebugProfile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
@@ -14,19 +14,7 @@
     <None Update="App.xaml">
       <SubType>Designer</SubType>
     </None>
-    <Page Update="CursorTrackerPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
     <Page Update="ConfigPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="DebugPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="TimingPage.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="InputsPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <None Update="MainWindow.xaml">

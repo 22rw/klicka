@@ -11,6 +11,7 @@
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
     <Nullable>enable</Nullable>
+    <WindowsPackageType>None</WindowsPackageType>
 	<!--<WindowsPackageType>None</WindowsPackageType>
 	<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>-->
   </PropertyGroup>
@@ -19,9 +20,6 @@
     <None Remove="DebugPage.xaml" />
     <None Remove="InputsPage.xaml" />
     <None Remove="TimingPage.xaml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Remove="TitleBar.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -67,9 +65,6 @@
     <Page Update="ConfigPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <None Update="TitleBar.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </None>
   </ItemGroup>
 
   <!--
