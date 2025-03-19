@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\anton\\Projects\\C#\\Klicka\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3C6F1D18-67A5-43D0-B193-3CDF0A89C5E6}|Klicka.csproj|c:\\users\\anton\\projects\\c#\\klicka\\configpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C6F1D18-67A5-43D0-B193-3CDF0A89C5E6}|Klicka.csproj|solutionrelative:configpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C6F1D18-67A5-43D0-B193-3CDF0A89C5E6}|Klicka.csproj|c:\\users\\anton\\projects\\c#\\klicka\\win32screenoverlay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C6F1D18-67A5-43D0-B193-3CDF0A89C5E6}|Klicka.csproj|solutionrelative:win32screenoverlay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C6F1D18-67A5-43D0-B193-3CDF0A89C5E6}|Klicka.csproj|c:\\users\\anton\\projects\\c#\\klicka\\iscreenoverlayprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3C6F1D18-67A5-43D0-B193-3CDF0A89C5E6}|Klicka.csproj|solutionrelative:iscreenoverlayprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3C6F1D18-67A5-43D0-B193-3CDF0A89C5E6}|Klicka.csproj|c:\\users\\anton\\projects\\c#\\klicka\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3C6F1D18-67A5-43D0-B193-3CDF0A89C5E6}|Klicka.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,24 +30,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IScreenOverlayProvider.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\Projects\\C#\\Klicka\\IScreenOverlayProvider.cs",
+              "RelativeDocumentMoniker": "IScreenOverlayProvider.cs",
+              "ToolTip": "C:\\Users\\anton\\Projects\\C#\\Klicka\\IScreenOverlayProvider.cs",
+              "RelativeToolTip": "IScreenOverlayProvider.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T17:15:20.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Win32ScreenOverlay.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\Projects\\C#\\Klicka\\Win32ScreenOverlay.cs",
+              "RelativeDocumentMoniker": "Win32ScreenOverlay.cs",
+              "ToolTip": "C:\\Users\\anton\\Projects\\C#\\Klicka\\Win32ScreenOverlay.cs",
+              "RelativeToolTip": "Win32ScreenOverlay.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAwwCUAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T17:12:27.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ConfigPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\anton\\Projects\\C#\\Klicka\\ConfigPage.xaml.cs",
+              "RelativeDocumentMoniker": "ConfigPage.xaml.cs",
+              "ToolTip": "C:\\Users\\anton\\Projects\\C#\\Klicka\\ConfigPage.xaml.cs",
+              "RelativeToolTip": "ConfigPage.xaml.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAowEQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T17:12:42.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\anton\\Projects\\C#\\Klicka\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\anton\\Projects\\C#\\Klicka\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAcwHsAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAkwHQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-16T22:01:23.792Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\anton\\Projects\\C#\\Klicka\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",

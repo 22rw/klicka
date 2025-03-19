@@ -52,8 +52,9 @@ namespace Klicka
 
             var window = (Application.Current as App).Window;
             var hwnd = Win32Interop.GetWindowFromWindowId(window.AppWindow.Id);
-            var wnd = new Win32ScreenOverlay(new HWND(hwnd));
+            IScreenOverlayProvider wnd = new Win32ScreenOverlay();
 
+            wnd.Configure(new HWND(hwnd));
             wnd.OverlayClicked += (s, p) =>
             {
                 DispatcherQueue.TryEnqueue(() =>

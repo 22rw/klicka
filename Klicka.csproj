@@ -17,9 +17,6 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="ConfigPage.xaml" />
-    <None Remove="DebugPage.xaml" />
-    <None Remove="InputsPage.xaml" />
-    <None Remove="TimingPage.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -53,15 +50,6 @@
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.250228001" />
   </ItemGroup>
   <ItemGroup>
-    <Page Update="InputsPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Update="TimingPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Update="DebugPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Update="ConfigPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>

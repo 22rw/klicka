@@ -19,7 +19,7 @@ using Windows.Win32.UI.WindowsAndMessaging;
 
 namespace Klicka
 {
-    internal class Win32ScreenOverlay
+    internal class Win32ScreenOverlay: IScreenOverlayProvider
     {
         public bool Open => _open;
         private bool _open = false;
@@ -33,8 +33,8 @@ namespace Klicka
 
         private const string className = "Klicka.Win32ScreenOverlay";
 
-        public Win32ScreenOverlay(HWND parent)
-        { 
+        public void Configure(HWND parent)
+        {
             _parent = parent;
         }
 
