@@ -67,9 +67,6 @@
     <Page Update="ConfigPage.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Update="CursorTrackerPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <None Update="TitleBar.xaml">
       <Generator>MSBuild:Compile</Generator>
     </None>
