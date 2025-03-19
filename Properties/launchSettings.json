@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "Klicka (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "Klicka (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

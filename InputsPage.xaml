@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Page
+    x:Class="Klicka.InputsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="using:Klicka"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    NavigationCacheMode="Enabled"
+    mc:Ignorable="d">
+
+    <StackPanel Orientation="Vertical">
+        <ComboBox
+            x:Name="btnComboBox"
+            Header="Mouse Button"
+            SelectedIndex="0">
+            <x:String>Left</x:String>
+            <x:String>Right</x:String>
+            <x:String>Middle</x:String>
+        </ComboBox>
+        <RadioButtons
+            x:Name="locationChoice"
+            Header="Click position"
+            SelectedIndex="0">
+            <RadioButton>
+                Use cursor position.
+            </RadioButton>
+            <RadioButton>
+                <StackPanel Orientation="Horizontal">
+                    <Button>Get position</Button>
+                    <NumberBox Value="0" />
+                    <NumberBox Value="0" />
+                </StackPanel>
+            </RadioButton>
+        </RadioButtons>
+    </StackPanel>
+</Page>
