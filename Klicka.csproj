@@ -16,6 +16,7 @@
 	<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>-->
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="AppWindowScreenOverlayWindow.xaml" />
     <None Remove="ConfigPage.xaml" />
   </ItemGroup>
 
@@ -48,6 +49,11 @@
     </PackageReference>
     <PackageReference Include="Microsoft.Windows.SDK.BuildTools" Version="10.0.26100.1742" />
     <PackageReference Include="Microsoft.WindowsAppSDK" Version="1.6.250228001" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AppWindowScreenOverlayWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="ConfigPage.xaml">

@@ -33,6 +33,13 @@ namespace Klicka
         public App()
         {
             this.InitializeComponent();
+            UnhandledException += App_UnhandledException;
+            Application.Current.UnhandledException += App_UnhandledException;
+        }
+
+        private void App_UnhandledException(object sender, Microsoft.UI.Xaml.UnhandledExceptionEventArgs e)
+        {
+            // Worst idea ever invented by mankind, but the app keeps crashing because of EngineExceptions that i dont know how to deal with.
         }
 
         /// <summary>
